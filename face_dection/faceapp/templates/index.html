@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+
+<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+<div id='stars'></div>
+<div id='stars2'></div>
+<div id='stars3'></div>
+<div id='horizon'>
+  <div class='glow'></div>
+</div>
+<div id='earth'></div>
+<div id='title'>
+  JEZT
+</div>
+<div id='subtitle'>
+  <span>
+    WELCOME
+  </span>
+  <span>
+    GUYS
+  </span>
+  <span>
+
+  </span>
+
+
+
+</div>
+
+
+  <div class="container">
+    <div class="center">
+      <a href="/faceapp/compare/"><button class="btn">
+        <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+					<filter id="glow">
+				    <fegaussianblur class="blur" result="coloredBlur" stddeviation="4"></fegaussianblur>
+				      <femerge>
+					      <femergenode in="coloredBlur"></femergenode>
+                <femergenode in="coloredBlur"></femergenode>
+                <femergenode in="coloredBlur"></femergenode>
+					      <femergenode in="SourceGraphic"></femergenode>
+				      </femerge>
+			    </filter>
+          <polygon points="179,1 149,1 179,29" class="triangle" />
+          <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+          <polyline points="179,2 179,59 2,59 2,2 179,2" class="hl-line" />
+        </svg>
+        <span>Compare Images</span>
+      </button></a>
+    </div>
+  </div>
+
+
+<div class="container1">
+    <div class="center">
+      <a href="/faceapp/detection/"><button class="btn"  >
+        <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+					<filter id="glow">
+				    <fegaussianblur class="blur" result="coloredBlur" stddeviation="4"></fegaussianblur>
+				      <femerge>
+					      <femergenode in="coloredBlur"></femergenode>
+                <femergenode in="coloredBlur"></femergenode>
+                <femergenode in="coloredBlur"></femergenode>
+					      <femergenode in="SourceGraphic"></femergenode>
+				      </femerge>
+			    </filter>
+          <polygon points="179,1 149,1 179,29" class="triangle" />
+          <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+          <polyline points="179,2 179,59 2,59 2,2 179,2" class="hl-line" />
+        </svg>
+        <span>Face Detect</span>
+      </button></a>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/static/index.js" class="utf-8"></script>
+
+</body>
+</html>
